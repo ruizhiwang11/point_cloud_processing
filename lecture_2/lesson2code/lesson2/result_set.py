@@ -92,4 +92,3 @@ class RadiusNNResultSet:
                   % (self.count, self.radius, self.comparison_counter)
         return output
 
-

@@ -74,7 +74,9 @@ def kdtree_recursive_build(root, db, point_indices, axis, leaf_size):
         
         # 作业1
         # 屏蔽开始
-
+        middle_left_idx = math.ceil(point_indices_sorted.shape[0] / 2) - 1
+        middle_left_point_idx = point_indices_sorted[middle_left_idx]
+        middle_left_point_value = db[middle_left_point_idx, axis]
         # 屏蔽结束
     return root
 

@@ -68,7 +68,7 @@ def octree_recursive_build(root, db, center, extent, point_indices, leaf_size, m
         # 屏蔽开始
         
         # 屏蔽结束
-    return root
+        return root
 
 # 功能：判断当前query区间是否在octant内
 # 输入：

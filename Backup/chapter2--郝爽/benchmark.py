@@ -50,9 +50,9 @@ def main():
     k = 8
     radius = 1
 
-    root_dir = './dataset/' # 数据集路径
+    root_dir = '../../lecture_2/lesson2code/' # 数据集路径
     cat = os.listdir(root_dir)
-    iteration_num = len(cat)
+    iteration_num = 1
 
     print("octree --------------")
     construction_time_sum = 0
@@ -62,7 +62,7 @@ def main():
     scipy_knn_time_sum = 0
     brute_time_sum = 0
     for i in range(iteration_num):
-        filename = os.path.join(root_dir, cat[i])
+        filename = os.path.join(root_dir,"000000.bin")
         db_np = read_velodyne_bin(filename)
 
         #采样
